@@ -4,12 +4,13 @@ using DesignPattern.BehavioralPattern.Strategy.Sample2;
 namespace DesignPattern.BehavioralPattern.Strategy
 {
     /// <summary>
-    /// Usage examples: 
-    /// The Strategy pattern is very common in C# code. It’s often used in various frameworks to provide users a way to 
-    /// change the behavior of a class without extending it.
     /// Identification: 
     /// Strategy pattern can be recognized by a method that lets nested object do the actual work, 
     /// as well as the setter that allows replacing that object with a different one.
+    /// 
+    /// Usage examples: 
+    /// The Strategy pattern is very common in C# code. It’s often used in various frameworks to provide users a way to 
+    /// change the behavior of a class without extending it.
     /// </summary>
     public class StartegyMain
     {
@@ -28,7 +29,7 @@ namespace DesignPattern.BehavioralPattern.Strategy
             context.DoSomeBusinessLogic();
 
             //Sample2
-            Console.WriteLine("-------------------Starting Sample 2 ---------------------");
+            Console.WriteLine("-------------Strategy Sample 2 --------------");
 
             Employee employee1 = new Employee("Ram", new Consultant());
             Employee employee2 = new Employee("Shayam", new SeniorConsultant());
