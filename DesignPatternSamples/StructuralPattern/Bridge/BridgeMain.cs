@@ -1,4 +1,5 @@
 ﻿using DesignPatternSamples.StructuralPattern.Bridge.Sample1;
+using DesignPatternSamples.StructuralPattern.Bridge.Sample2;
 
 namespace DesignPatternSamples.StructuralPattern.Bridge
 {
@@ -29,6 +30,19 @@ namespace DesignPatternSamples.StructuralPattern.Bridge
 
             redCircle.Draw();
             blueCircle.Draw();
+
+            Console.WriteLine("\n------------Bridge pattern Sample2---------------");
+            Console.WriteLine("Abstrations and implementions");
+
+            Abstraction abstraction = new RefinedAbstraction();
+
+            Console.WriteLine("Trying to test Concrete A implementation");
+            abstraction.Implementor = new ConcreteAImplementor();
+            abstraction.DoOperation();
+
+            Console.WriteLine("Trying to test Concrete B implementation");
+            abstraction.Implementor = new ConcreteBImplementor();
+            abstraction.DoOperation();
 
             Console.ReadKey();
 
