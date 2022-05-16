@@ -1,6 +1,7 @@
 ﻿using DesignPattern.BehavioralPattern.PubSub;
 using DesignPattern.BehavioralPattern.Strategy;
 using DesignPatternSamples.CreationalPattern.Factory;
+using DesignPatternSamples.StructuralPattern.Adapter;
 using DesignPatternSamples.StructuralPattern.Bridge;
 
 /// <summary>
@@ -14,4 +15,5 @@ using DesignPatternSamples.StructuralPattern.Bridge;
 //PubSubMain.Main();  //PubSub pattern
 
 //Structural Design Patterns
-BridgeMain.Main();
+//BridgeMain.Main();
+AdapterMain.Main();
