@@ -15,10 +15,13 @@
             get
             { return _lazy.Value; }
         }
-
         private SingletonLazyNet4()
         {
 
+        }
+        public void DisplayMessage(string message)
+        {
+            Console.WriteLine($"This is a message: {message}");
         }
     }
 }

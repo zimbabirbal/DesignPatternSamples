@@ -37,9 +37,28 @@ namespace DesignPatternSamples.CreationalPattern.Singleton
             var threadSafeInstanceLazy = SingletonThreadSafeLazy.Instance;
             Console.WriteLine($"Thread safe with lazy {nameof(threadSafeInstanceLazy)}");
 
-            var singletonInstanceWithBuiltInNet = SingletonLazyNet4.Instance;
-            Console.WriteLine($"Singleton object using .NET built in {nameof(singletonInstanceWithBuiltInNet)}");
+            //var singletonInstanceWithBuiltInNet = SingletonLazyNet4.Instance;
+            //Console.WriteLine($"Singleton object using .NET built in {nameof(singletonInstanceWithBuiltInNet)}");
+
+            //another way to test
+            Parallel.Invoke(
+                () => GetMessage1("Hello"),
+                () => GetMessage2("Bye")
+                );
+
             Console.ReadKey();
+        }
+
+        public static void GetMessage1(string message)
+        {
+            SingletonLazyNet4 singletonLazyNet4 = SingletonLazyNet4.Instance;
+            singletonLazyNet4.DisplayMessage(message);
+        }
+
+        public static void GetMessage2(string message)
+        {
+            SingletonLazyNet4 singletonLazyNet4 = SingletonLazyNet4.Instance;
+            singletonLazyNet4.DisplayMessage(message);
         }
     }
 }
