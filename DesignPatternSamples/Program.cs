@@ -1,6 +1,7 @@
 ﻿using DesignPattern.BehavioralPattern.PubSub;
 using DesignPattern.BehavioralPattern.Strategy;
 using DesignPatternSamples.CreationalPattern.Factory;
+using DesignPatternSamples.CreationalPattern.Singleton;
 using DesignPatternSamples.StructuralPattern.Adapter;
 using DesignPatternSamples.StructuralPattern.Bridge;
 
@@ -9,6 +10,7 @@ using DesignPatternSamples.StructuralPattern.Bridge;
 /// </summary>
 //Creational Design Patterns
 //FactoryMain.Main();  //Factory pattern
+SingletonMain.Main(); //Singleton pattern
 
 //Behavioral Design Patterns
 //StartegyMain.Main(); //Strategy pattern
@@ -16,4 +18,4 @@ using DesignPatternSamples.StructuralPattern.Bridge;
 
 //Structural Design Patterns
 //BridgeMain.Main();
-AdapterMain.Main();
+//AdapterMain.Main();
