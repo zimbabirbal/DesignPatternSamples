@@ -1,4 +1,5 @@
 ﻿using DesignPatternSamples.BehavioralPattern.Observer.Sample1;
+using DesignPatternSamples.BehavioralPattern.Observer.Sample2;
 
 namespace DesignPatternSamples.BehavioralPattern.Observer
 {
@@ -12,6 +13,7 @@ namespace DesignPatternSamples.BehavioralPattern.Observer
     /// Usage Examples:
     /// Online shoping app, when item is out of stock and users subscribe to it and get notified
     /// when item is avaliable.
+    /// Sample 2 contains microsoft built in Observer design pattern
     /// </summary>
     internal class ObserverMain
     {
@@ -33,6 +35,30 @@ namespace DesignPatternSamples.BehavioralPattern.Observer
             subject.UnregisterObserver(mariaUser); //assume maria purchase the item.
 
             subject.SetAvaliability("unavaliable");
+
+            Console.WriteLine("\n-----------------Sample 2 using MS built in Observer pattern ------------------");
+            BaggageHandler provider = new BaggageHandler();
+            ArrivalsMonitor observer1 = new ArrivalsMonitor("BaggageClaim");
+            ArrivalsMonitor observer2 = new ArrivalsMonitor("SecurityCheck");
+
+            provider.BaggageStatus(1, "kathmandu", 2);
+            observer1.Subscribe(provider);
+            provider.BaggageStatus(2, "delhi", 3);
+            provider.BaggageStatus(3, "bangalore", 5);
+            provider.BaggageStatus(4, "goa", 6);
+            observer2.Subscribe(provider);
+
+            provider.BaggageStatus(5, "bangalore", 3);
+            provider.BaggageStatus(6, "delhi", 2);
+            provider.BaggageStatus(5);
+
+            observer2.Unsubscribe();
+
+            provider.BaggageStatus(4);
+            provider.BaggageStatus(3);
+            provider.BaggageStatus(2);
+            provider.BaggageStatus(1);
+            provider.LastBaggageClaimed();
 
             Console.ReadKey();
 

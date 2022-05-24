@@ -57,5 +57,12 @@
                 _flightsToRemove.Clear();
             }
         }
+        public void LastBaggageClaimed()
+        {
+            foreach (var observer in _observers)
+                observer.OnCompleted();
+
+            _observers.Clear();
+        }
     }
 }
