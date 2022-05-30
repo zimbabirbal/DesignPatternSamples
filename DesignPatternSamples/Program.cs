@@ -1,6 +1,7 @@
 ﻿using DesignPattern.BehavioralPattern.PubSub;
 using DesignPattern.BehavioralPattern.Strategy;
 using DesignPatternSamples.BehavioralPattern.Observer;
+using DesignPatternSamples.BehavioralPattern.State;
 using DesignPatternSamples.CreationalPattern.Factory;
 using DesignPatternSamples.CreationalPattern.Singleton;
 using DesignPatternSamples.StructuralPattern.Adapter;
@@ -18,8 +19,9 @@ using DesignPatternSamples.StructuralPattern.Proxy;
 //StartegyMain.Main(); //Strategy pattern
 //PubSubMain.Main();  //PubSub pattern
 //ObserverMain.Main(); //Observer pattern
+StateMain.Main();
 
 //Structural Design Patterns
 //BridgeMain.Main(); //Bridge pattern
 //AdapterMain.Main(); //Adapter pattern
-ProxyMain.Main();
+//ProxyMain.Main();
