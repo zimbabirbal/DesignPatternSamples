@@ -5,6 +5,7 @@ using DesignPatternSamples.CreationalPattern.Factory;
 using DesignPatternSamples.CreationalPattern.Singleton;
 using DesignPatternSamples.StructuralPattern.Adapter;
 using DesignPatternSamples.StructuralPattern.Bridge;
+using DesignPatternSamples.StructuralPattern.Proxy;
 
 /// <summary>
 /// Uncomment the following pattern which you want to test.
@@ -16,8 +17,9 @@ using DesignPatternSamples.StructuralPattern.Bridge;
 //Behavioral Design Patterns
 //StartegyMain.Main(); //Strategy pattern
 //PubSubMain.Main();  //PubSub pattern
-ObserverMain.Main(); //Observer pattern
+//ObserverMain.Main(); //Observer pattern
 
 //Structural Design Patterns
 //BridgeMain.Main(); //Bridge pattern
 //AdapterMain.Main(); //Adapter pattern
+ProxyMain.Main();
