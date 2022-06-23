@@ -4,6 +4,7 @@ using DesignPatternSamples.BehavioralPattern.Observer;
 using DesignPatternSamples.BehavioralPattern.State;
 using DesignPatternSamples.CreationalPattern.Builder;
 using DesignPatternSamples.CreationalPattern.Factory;
+using DesignPatternSamples.CreationalPattern.Prototype;
 using DesignPatternSamples.CreationalPattern.Singleton;
 using DesignPatternSamples.StructuralPattern.Adapter;
 using DesignPatternSamples.StructuralPattern.Bridge;
@@ -15,7 +16,8 @@ using DesignPatternSamples.StructuralPattern.Proxy;
 //Creational Design Patterns
 //FactoryMain.Main();  //Factory pattern
 //SingletonMain.Main(); //Singleton pattern
-BuilderMain.Main(); //Builder pattern
+//BuilderMain.Main(); //Builder pattern
+PrototypeMain.Main();
 
 //Behavioral Design Patterns
 //StartegyMain.Main(); //Strategy pattern
@@ -27,3 +29,5 @@ BuilderMain.Main(); //Builder pattern
 //BridgeMain.Main(); //Bridge pattern
 //AdapterMain.Main(); //Adapter pattern
 //ProxyMain.Main(); //Proxy pattern
+
+Console.ReadLine();
