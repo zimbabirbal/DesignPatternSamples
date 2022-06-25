@@ -1,5 +1,6 @@
 ﻿using DesignPattern.BehavioralPattern.PubSub;
 using DesignPattern.BehavioralPattern.Strategy;
+using DesignPatternSamples.BehavioralPattern.Chain_of_Responsibility;
 using DesignPatternSamples.BehavioralPattern.Observer;
 using DesignPatternSamples.BehavioralPattern.State;
 using DesignPatternSamples.CreationalPattern.Builder;
@@ -25,11 +26,12 @@ using DesignPatternSamples.StructuralPattern.Proxy;
 //PubSubMain.Main();  //PubSub pattern
 //ObserverMain.Main(); //Observer pattern
 //StateMain.Main(); //State pattern
+ChainOfResponsiblityMain.Main(); //Chain of Responsiblity pattern
 
 //Structural Design Patterns
 //BridgeMain.Main(); //Bridge pattern
 //AdapterMain.Main(); //Adapter pattern
 //ProxyMain.Main(); //Proxy pattern
-DecoratorMain.Main(); //Decorator pattern
+//DecoratorMain.Main(); //Decorator pattern
 
 Console.ReadLine();
